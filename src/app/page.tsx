@@ -246,8 +246,7 @@ export default function HomePage() {
             </table>
           )}
         </section>
-
-
+        
       </main>
     </div>
   );
