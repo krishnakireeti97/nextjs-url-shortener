@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "prisma:generate": "prisma generate",
+    "vercel-build": "prisma generate && next build",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.1.0",
     "dotenv": "^17.2.3",
     "next": "16.0.6",
     "pg": "^8.16.3",
